@@ -1,0 +1,99 @@
+/*
+ *= require twitter/bootstrap
+ *= require font-awesome
+ */
+
+/*Navbar Styling */
+body {
+	background-image: url('tile.jpg') !important;
+}
+.container {
+	padding: 0px !important;
+}
+.navbar {
+	/*background-color: #56018B !important;*/
+	min-height: 40px !important;
+	margin-bottom: 0px !important;
+}
+.navbar h2 {
+	margin: 0px;
+	color: white;
+	margin-top: 5px !important;
+}
+.form-group {
+	margin-top: 7px !important;
+}
+
+.form-inline .form-control{
+	height: 25px !important;
+	width: 300px !important;
+	margin-right: 0px !important;
+	border-radius: 0px !important;
+	border: 1px !important; 
+}
+
+.form-inline button{
+	min-height: 25px;
+	padding: 1px 20px ;
+	margin-left: 0px;
+	border-radius: 0px; 
+	background-color: #4589D4;
+	border: 1px;
+	color:white;
+}
+
+.contained {
+	background-color: white;
+	border-radius: 2px !important;
+}
+
+.nav-right {
+	margin-top: 10px;
+	color: white;
+	i{
+		margin-right: 30px;
+	}
+}
+
+.dropdown a {
+	color:gray;
+}
+
+.dropdown a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.nav-name {
+	color:white;
+	margin-right: 5px;
+}
+
+.footer {
+	background-color: #4589D4;
+	height: 50px;
+
+	p {
+		padding-top: 15px;
+		color:white;
+	}
+}
+
+.login-modal {
+	.modal-content {
+		width: 380px;
+		padding-bottom: 20px !important;
+    }
+
+    form {
+    	margin: 0px auto;
+    }
+}
+
+.modal {
+	overflow-y: auto !important;
+}
+
+.modal-content {
+	margin: 0px auto !important;
+}

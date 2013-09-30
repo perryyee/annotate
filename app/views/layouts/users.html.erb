@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :title %></title>
+  <%= stylesheet_link_tag    "custom", :media => "all" %>
+  <%= stylesheet_link_tag    "users", :media => "all" %>
+  <%= javascript_include_tag "custom" %>
+  <%= javascript_include_tag "users" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'shared/nav' %>
+<div class="container contained">
+	<%= yield %>
+	<%= render 'shared/footer' %>
+</div>
+
+	
+
+</body>
+</html>

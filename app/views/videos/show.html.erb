@@ -1,0 +1,62 @@
+<%= content_for :head do %>
+	<script type="text/javascript">
+		window.onbeforeunload = function() {
+			<% if !signed_in? %>
+				return "Please login in order to save your video and notes.";
+			<% else %>
+				return "Please save your video or all data will be lost.";
+			<% end %>
+		};
+		</script>
+
+<% end %>
+
+
+<%= content_for :title do %>
+	Video
+<% end %>
+
+<h1 class="show_title"><%= @title %>:</h1>
+
+<div class="row">
+	<div class="col-lg-7">
+		<div id="player"></div>
+	</div>
+	<div class="col-lg-5">
+		<div class="well note">
+			<div id = "note-title"></div>
+			<div id="note-content"></div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-7">
+		<div class="well save_note">
+			<div class="note_errors"></div>
+			<%= simple_form_for(@note) do |f| %>
+				<%= f.input :title %><br/>
+				<%= f.input :url, :as => :hidden, :input_html => {:value => @video_url} %>
+				<%= f.input :time, :as => :hidden, :input_html => {:value => ''} %>
+				<input type="hidden" name="video_id" value=<%= @video.id %>>
+				<%= f.input :content, as: :text, :input_html =>{:rows => 8, :cols => 60} %><br/>
+				<%= f.submit  "Save Note", :class => "btn btn-primary pull-right" %>
+			<% end %>
+		</div>
+	</div>
+	<div class="col-lg-5">
+		<h2>Notes</h2>
+		<div class="result_table">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Title</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<input id="video_id" type="hidden" name="video_id" value=<%= @video_url %>>

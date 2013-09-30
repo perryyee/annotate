@@ -1,0 +1,67 @@
+// Place all the styles related to the Videos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.show_title {
+	margin-bottom: 0px !important;
+}
+.results:hover {
+	cursor:pointer;
+}
+
+.info {
+	margin-top: 40px;
+	margin-left: 50px;
+}
+#player {
+	margin: 30px;
+}
+.row h2{
+	margin-top: 0px;
+	margin-right: 30px;
+	margin-bottom: 0px !important;
+}
+.table {
+	width: 640px !important;
+}
+.col-lg-5 {
+	.well {
+		margin: 30px 30px 30px 0px !important;
+		overflow: auto;
+	}
+	.note {
+		height: 390px;
+	}
+}
+
+.control-group {
+	input {
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+	}
+}
+
+#note-title h3{
+	margin-top: 0px !important;
+}
+
+.result_table {
+	width: 438px;
+	height: 328px;
+	overflow-x: hidden;
+	margin-bottom: 30px;
+}
+
+tbody tr:hover {
+	cursor:pointer;
+}
+.save_note {
+	margin-left: 30px;
+	overflow: auto;
+}

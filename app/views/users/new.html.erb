@@ -1,0 +1,12 @@
+<h2 class="modal-title text-center">Register</h2>
+<div class="errors"></div>
+<%= simple_form_for(@user, html:{novalidate: true}) do |f| %>
+ 	<%= f.input :first_name %>
+ 	<%= f.input :last_name %>
+ 	<%= f.input :email %>
+ 	<%= f.input :password %>
+ 	<%= f.input :password_confirmation %><br/>
+ 	<%= f.submit :Register, :class => "btn btn-primary"  %>
+<% end %>	
+
+<a id="link_login" data-toggle="modal" href="#myModal" class="pull-right">Already a member, Login?</a>

@@ -1,0 +1,58 @@
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<a href="/"><h2 class='pull-left'>annotate</h2></a>
+			</div>
+			<div class="col-lg-8">
+				<div class="col-lg-6 col-lg-offset-3 text-center">
+					<form class="form-inline form_group" action="/videos" method="get">
+						<div class="form-group pull-left">
+							<input class='form-inline form-control' name="search" type="text" placeholder="Search Youtube">
+						</div>
+						<div class="form-group pull-left">
+							<button class='glyph btn btn-success'><i class="icon-search icon-1x"></i></button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-2 nav-right">
+				<% if signed_in? %>
+					<div class="dropdown pull-right">
+						<a class="glyph2 pull-right" href="javascript:;" data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					    	<li role="presentation"><a role="menuitem" tabindex="-1" href=<%= "/users/#{current_user.id}" %> >My Videos</a></li>
+					    	<li role="presentation" class="divider"></li>
+					    	<li role="presentation"><a role="menuitem" tabindex="-1" href=<%= "/signout" %>>Logout</a></li>
+					  	</ul>
+					</div>
+					<span class='nav-name pull-right'><%= current_user.first_name %></span>
+				<% else %>
+					<a href="#myModal" data-toggle="modal" class="pull-right">Login</a>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<div class="modal fade login-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      	<div class="modal-content">
+        	<div class="modal-body">
+          		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          		<%= render :template => "/sessions/new" %>
+        	</div>
+      	</div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade login-modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      	<div class="modal-content">
+        	<div class="modal-body">
+          		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          		<%= render :template => "/users/new" %>
+        	</div>
+      	</div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

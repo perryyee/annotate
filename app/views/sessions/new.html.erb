@@ -1,0 +1,10 @@
+<h2 class="text-center">Login</h2>
+<div class="errors"></div>
+
+<%= simple_form_for(:session, :url => sessions_path, html:{novalidate: true}) do |f| %>
+	<%= f.input :email, :class => "form-control" %>
+	<%= f.input :password, :class => "form-control" %><br/>
+	<%= f.submit :Login, :class => "btn btn-primary" %>
+<% end %>
+
+<a id="link_register" data-toggle="modal" href="#myModal2" class="pull-right">Not Registered?</a>
