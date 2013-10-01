@@ -152,4 +152,30 @@ $(document).ready(function(){
 		}
 		return false;
 	});
+
+	$('#nextToken').submit(function(){
+		$('#nextSearch').val($('#searchQuery').val());
+		// $.post(
+		// 	$(this).attr('action'),
+		// 	$(this).serialize(),
+		// 	function(data) {
+				
+		// 	},
+		// 	"json"
+		// );
+		// return false;
+	});
+
+	$('#prevToken').submit(function(){
+		$('#prevSearch').val($('#searchQuery').val());
+		// $.get(
+		// 	$(this).attr('action'),
+		// 	$(this).serialize(),
+		// 	function(data) {
+
+		// 	},
+		// 	"json"
+		// );
+		// return false;
+	});
 });

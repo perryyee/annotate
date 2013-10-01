@@ -8,7 +8,11 @@
 				<div class="col-lg-6 col-lg-offset-3 text-center">
 					<form class="form-inline form_group" action="/videos" method="get">
 						<div class="form-group pull-left">
-							<input class='form-inline form-control' name="search" type="text" placeholder="Search Youtube">
+							<% if @search %>
+								<input id="searchQuery" class='form-inline form-control' name="search" type="text" value=<%= @search %>>
+							<% else %>
+								<input class='form-inline form-control' name="search" type="text" placeholder="Search Youtube">
+							<% end %>
 						</div>
 						<div class="form-group pull-left">
 							<button class='glyph btn btn-success'><i class="icon-search icon-1x"></i></button>

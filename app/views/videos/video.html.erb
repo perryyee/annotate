@@ -1,3 +1,5 @@
+<%
+=begin %>
 <%= content_for :head do %>
 	<script type="text/javascript">
 		window.onbeforeunload = function() {
@@ -10,14 +12,14 @@
 		</script>
 
 <% end %>
-
+<%
+=end %>
 
 <%= content_for :title do %>
 	Video
 <% end %>
 
-<%= link_to "Share Link", "#link_modal", "data-toggle" => "modal", :class => "share pull-right" %>
-<h1 class="show_title"><%= @title %>:</h1>
+<h1 class="show_title"><%= @video.name %>:</h1>
 
 <div class="row">
 	<div class="col-lg-7">
@@ -36,7 +38,7 @@
 			<div class="note_errors"></div>
 			<%= simple_form_for(@note) do |f| %>
 				<%= f.input :title %><br/>
-				<%= f.input :url, :as => :hidden, :input_html => {:value => @video_url} %>
+				<%= f.input :url, :as => :hidden, :input_html => {:value => @video.url} %>
 				<%= f.input :time, :as => :hidden, :input_html => {:value => ''} %>
 				<input type="hidden" name="video_id" value=<%= @video.id %>>
 				<%= f.input :content, as: :text, :input_html =>{:rows => 8, :cols => 60} %><br/>
@@ -60,7 +62,7 @@
 		</div>
 	</div>
 </div>
-<input id="video_id" type="hidden" name="video_id" value=<%= @video_url %>>
+<input id="video_id" type="hidden" name="video_id" value=<%= @video.url %>>
 
 <div class="modal fade login-modal" id="link_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

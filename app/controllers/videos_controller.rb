@@ -4,8 +4,16 @@ class VideosController < ApplicationController
   	if params[:search]
   		query = params[:search].split(" ").join("+")
   	end
-  	
-  	@data = youtube_get(query)
+
+    @search = params[:search]
+
+  	if params[:nextPage] 
+      @data = youtube_get(query, params[:nextPage])
+    elsif params[:prevPage]
+      @data = youtube_get(query, params[:prevPage])
+    else
+  	  @data = youtube_get(query)
+    end
 
   end
 
@@ -21,10 +29,17 @@ class VideosController < ApplicationController
 
   	video = Video.new
   	video.name = @title
-  	video.url = "www.youtube.com/watch?v=#{@video_url}"
+  	video.url = @video_url
   	video.save
 
   	@video = Video.find(video.id)
+  	@note = @video.notes.new
+  end
+
+  def video
+  	@user = User.new
+  	@video = Video.find(params[:id])
+
   	@note = @video.notes.new
   end
 end

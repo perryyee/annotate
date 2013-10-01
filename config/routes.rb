@@ -9,6 +9,8 @@ Annotate::Application.routes.draw do
   match "/signin", :to => 'sessions#new'
   match "/signout", :to => 'sessions#destroy'
 
+  match 'v/:id' => 'videos#video'
+
   root :to => 'static#index'
 
   # The priority is based upon order of creation:

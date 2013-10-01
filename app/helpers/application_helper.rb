@@ -4,8 +4,14 @@ module ApplicationHelper
 	require 'net/https'
 	require 'json'
 
-	def youtube_get(query)
-		url = URI.parse("https://www.googleapis.com/youtube/v3/search?q=#{query}&type=video&part=snippet&maxResults=10&key=AIzaSyDdqP44d0C4l29FsjlIdtfNf7aGZrYnN9c")
+	def youtube_get(query, token="")
+		if !token
+			url = URI.parse("https://www.googleapis.com/youtube/v3/search?q=#{query}&type=video&part=snippet&maxResults=10&key=AIzaSyDdqP44d0C4l29FsjlIdtfNf7aGZrYnN9c")
+		else 
+			url = URI.parse("https://www.googleapis.com/youtube/v3/search?q=#{query}&type=video&part=snippet&maxResults=10&pageToken=#{token}&key=AIzaSyDdqP44d0C4l29FsjlIdtfNf7aGZrYnN9c")
+		end
+
+		puts url 
 
 		response = Net::HTTP.start(url.host, use_ssl: true, verify_mode: OpenSSL::SSL::VERIFY_NONE) do |http|
 		  http.get url.request_uri, 'User-Agent' => 'MyLib v1.2'

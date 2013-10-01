@@ -21,4 +21,22 @@
 			</div>
 		<% end %>
 	<% end %>
+	
+	<% if @data['nextPageToken'] %>
+		<% #link_to "Next", "/videos?search=#{@search}"%>
+		<form id="nextToken" action=<%= "/videos"%> method="get">
+			<input id="nextSearch" type="hidden" name="search" value="">
+			<input id="nextPage" name="nextPage" type="hidden" value=<%= @data['nextPageToken']%>>
+			<button type="submit" class="btn-link pull-right">Next</button>
+		</form>
+	<% end %>
 
+	<% if @data['prevPageToken'] %>
+		<% #link_to "Previous", "/videos?search=#{@search}", :class => "pull-right" %>
+		<form id="prevToken" action=<%= "/videos" %> method="get">
+			<input id="prevSearch" type="hidden" name="search" value="">
+			<input id="prevPage" name="prevPage" type="hidden" value=<%= @data['prevPageToken']%>>
+			<button type="submit" class="btn-link pull-right">Previous</button>
+		</form>
+	<% end %>
+	<div class="clear"></div>
