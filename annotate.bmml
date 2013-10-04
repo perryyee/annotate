@@ -1,0 +1,583 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2536" measuredH="1256" mockupW="2521" mockupH="1218">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="80" y="38" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>anNOtaTE%0Ahttp%3A//www.annotate.com/</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="80" y="167" w="100" h="444" measuredW="100" measuredH="70" zOrder="1" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="80" y="107" w="800" h="60" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6770343</color>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="109" y="125" w="-1" h="-1" measuredW="155" measuredH="35" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>anNOtaTE</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="534" y="124" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="363" y="124" w="177" h="-1" measuredW="79" measuredH="26" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::SubTitle" x="817" y="141" w="-1" h="-1" measuredW="39" measuredH="19" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Login</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="800" y="114" w="73" h="27" measuredW="73" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Register</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="780" y="167" w="100" h="444" measuredW="100" measuredH="70" zOrder="8" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::SubTitle" x="205" y="182" w="-1" h="-1" measuredW="225" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>CS101%3A%20Binary%20Search%20Trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Webcam" x="205" y="208" w="294" h="153" measuredW="177" measuredH="146" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::TextArea" x="279" y="491" w="370" h="51" measuredW="200" measuredH="140" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Left%20node%20is%20smaller%20or%20equal%20to%20parent%20node%2C%20right%20node%20is%20larger%20than%20parent%20node</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Button" x="569" y="557" w="-1" h="-1" measuredW="80" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Post%20Note</text>
+      </controlProperties>
+    </control>
+    <control controlID="125" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="903" y="38" w="800" h="600" measuredW="450" measuredH="400" zOrder="13" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>anNOtaTE%0Ahttp%3A//www.annotate.com/videos/adsfr23rh20hf0</text>
+      </controlProperties>
+    </control>
+    <control controlID="126" controlTypeID="com.balsamiq.mockups::Canvas" x="903" y="167" w="100" h="444" measuredW="100" measuredH="70" zOrder="14" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="127" controlTypeID="com.balsamiq.mockups::Canvas" x="903" y="107" w="800" h="60" measuredW="100" measuredH="70" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6770343</color>
+      </controlProperties>
+    </control>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::SubTitle" x="932" y="125" w="-1" h="-1" measuredW="155" measuredH="35" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>anNOtaTE</text>
+      </controlProperties>
+    </control>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::Button" x="1360" y="124" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::TextInput" x="1183" y="124" w="177" h="-1" measuredW="79" measuredH="26" zOrder="19" locked="false" isInGroup="-1"/>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::SubTitle" x="1603" y="128" w="-1" h="-1" measuredW="84" measuredH="19" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Perry%20Yee%20%5E</text>
+      </controlProperties>
+    </control>
+    <control controlID="133" controlTypeID="com.balsamiq.mockups::Canvas" x="1603" y="167" w="100" h="444" measuredW="100" measuredH="70" zOrder="21" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="197" controlTypeID="com.balsamiq.mockups::TextArea" x="205" y="404" w="294" h="27" measuredW="200" measuredH="140" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>@%201%3A30%20Binary%20search%20complexity</text>
+      </controlProperties>
+    </control>
+    <control controlID="198" controlTypeID="com.balsamiq.mockups::TextArea" x="205" y="364" w="294" h="32" measuredW="200" measuredH="140" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>@%201%3A00%20Binary%20search%20trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="203" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="903" y="656" w="800" h="600" measuredW="450" measuredH="400" zOrder="24" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>anNOtaTE%0Ahttp%3A//www.annotate.com/videos/adsfr23rh20hf0</text>
+      </controlProperties>
+    </control>
+    <control controlID="204" controlTypeID="com.balsamiq.mockups::Canvas" x="903" y="785" w="100" h="444" measuredW="100" measuredH="70" zOrder="25" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="205" controlTypeID="com.balsamiq.mockups::Canvas" x="903" y="725" w="800" h="60" measuredW="100" measuredH="70" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6770343</color>
+      </controlProperties>
+    </control>
+    <control controlID="206" controlTypeID="com.balsamiq.mockups::SubTitle" x="932" y="742" w="-1" h="-1" measuredW="155" measuredH="35" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>anNOtaTE</text>
+      </controlProperties>
+    </control>
+    <control controlID="207" controlTypeID="com.balsamiq.mockups::Button" x="1360" y="742" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="208" controlTypeID="com.balsamiq.mockups::TextInput" x="1183" y="742" w="177" h="-1" measuredW="79" measuredH="26" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="211" controlTypeID="com.balsamiq.mockups::Canvas" x="1603" y="785" w="100" h="444" measuredW="100" measuredH="70" zOrder="30" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="242" controlTypeID="com.balsamiq.mockups::Arrow" x="1219" y="1100" w="58" h="122" measuredW="150" measuredH="100" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="243" controlTypeID="com.balsamiq.mockups::StickyNote" x="1588" y="893" w="166" h="170" measuredW="109" measuredH="123" zOrder="80" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>annotation%20is%20deleted%20and%20replaced%20upon%20new%20section</text>
+      </controlProperties>
+    </control>
+    <control controlID="244" controlTypeID="com.balsamiq.mockups::StickyNote" x="15" y="485" w="150" h="171" measuredW="109" measuredH="123" zOrder="67" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Each%20comment%20is%20editable</text>
+      </controlProperties>
+    </control>
+    <control controlID="245" controlTypeID="com.balsamiq.mockups::StickyNote" x="849" y="409" w="179" h="180" measuredW="109" measuredH="123" zOrder="79" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>clicking%20on%20the%20time%2C%20links%20to%20the%20video%20at%20that%20specific%20duration</text>
+      </controlProperties>
+    </control>
+    <control controlID="252" controlTypeID="com.balsamiq.mockups::SubTitle" x="1603" y="746" w="-1" h="-1" measuredW="84" measuredH="19" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Perry%20Yee%20%5E</text>
+      </controlProperties>
+    </control>
+    <control controlID="253" controlTypeID="com.balsamiq.mockups::ModalScreen" x="80" y="108" w="800" h="502" measuredW="320" measuredH="240" zOrder="66" locked="false" isInGroup="-1"/>
+    <control controlID="260" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="80" y="656" w="800" h="600" measuredW="450" measuredH="400" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>anNOtaTE%0Ahttp%3A//www.annotate.com/q%3Fsearch%3Dbinary%25search%25tree</text>
+      </controlProperties>
+    </control>
+    <control controlID="261" controlTypeID="com.balsamiq.mockups::Canvas" x="80" y="785" w="100" h="444" measuredW="100" measuredH="70" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="262" controlTypeID="com.balsamiq.mockups::Canvas" x="80" y="725" w="800" h="60" measuredW="100" measuredH="70" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6770343</color>
+      </controlProperties>
+    </control>
+    <control controlID="263" controlTypeID="com.balsamiq.mockups::SubTitle" x="109" y="742" w="-1" h="-1" measuredW="155" measuredH="35" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>anNOtaTE</text>
+      </controlProperties>
+    </control>
+    <control controlID="264" controlTypeID="com.balsamiq.mockups::Button" x="537" y="742" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="265" controlTypeID="com.balsamiq.mockups::TextInput" x="360" y="742" w="177" h="-1" measuredW="133" measuredH="27" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>binary%20Search%20Trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="266" controlTypeID="com.balsamiq.mockups::Canvas" x="780" y="785" w="100" h="444" measuredW="100" measuredH="70" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="267" controlTypeID="com.balsamiq.mockups::SubTitle" x="205" y="800" w="-1" h="-1" measuredW="231" measuredH="21" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Search%3A%20Binary%20Search%20Trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="268" controlTypeID="com.balsamiq.mockups::Webcam" x="228" y="854" w="67" h="63" measuredW="177" measuredH="146" zOrder="41" locked="false" isInGroup="-1"/>
+    <control controlID="297" controlTypeID="com.balsamiq.mockups::SubTitle" x="780" y="746" w="-1" h="-1" measuredW="84" measuredH="19" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Perry%20Yee%20%5E</text>
+      </controlProperties>
+    </control>
+    <control controlID="298" controlTypeID="com.balsamiq.mockups::Webcam" x="228" y="929" w="67" h="63" measuredW="177" measuredH="146" zOrder="44" locked="false" isInGroup="-1"/>
+    <control controlID="299" controlTypeID="com.balsamiq.mockups::Webcam" x="228" y="1006" w="67" h="63" measuredW="177" measuredH="146" zOrder="45" locked="false" isInGroup="-1"/>
+    <control controlID="300" controlTypeID="com.balsamiq.mockups::Webcam" x="228" y="1080" w="67" h="63" measuredW="177" measuredH="146" zOrder="47" locked="false" isInGroup="-1"/>
+    <control controlID="301" controlTypeID="com.balsamiq.mockups::Webcam" x="228" y="1159" w="67" h="63" measuredW="177" measuredH="146" zOrder="48" locked="false" isInGroup="-1"/>
+    <control controlID="302" controlTypeID="com.balsamiq.mockups::Paragraph" x="330" y="859" w="200" h="52" measuredW="200" measuredH="80" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="303" controlTypeID="com.balsamiq.mockups::Paragraph" x="330" y="930" w="200" h="52" measuredW="200" measuredH="80" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="304" controlTypeID="com.balsamiq.mockups::Paragraph" x="330" y="1011" w="200" h="52" measuredW="200" measuredH="80" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="305" controlTypeID="com.balsamiq.mockups::Paragraph" x="330" y="1085" w="200" h="52" measuredW="200" measuredH="80" zOrder="52" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="306" controlTypeID="com.balsamiq.mockups::Paragraph" x="330" y="1164" w="200" h="52" measuredW="200" measuredH="80" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="308" controlTypeID="com.balsamiq.mockups::TextInput" x="279" y="458" w="370" h="-1" measuredW="81" measuredH="27" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>BST%20Nodes</text>
+      </controlProperties>
+    </control>
+    <control controlID="309" controlTypeID="com.balsamiq.mockups::SubTitle" x="228" y="462" w="-1" h="-1" measuredW="36" measuredH="19" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Title%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="310" controlTypeID="com.balsamiq.mockups::SubTitle" x="228" y="490" w="-1" h="-1" measuredW="35" measuredH="19" zOrder="55" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Note</text>
+      </controlProperties>
+    </control>
+    <control controlID="312" controlTypeID="__group__" x="522" y="209" w="234" h="209" measuredW="234" measuredH="209" zOrder="56" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="234" h="209" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="312">
+          <controlProperties>
+            <borderColor>10066329</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>16777215</color>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="8" y="40" w="215" h="-1" measuredW="211" measuredH="23" zOrder="1" locked="false" isInGroup="312">
+          <controlProperties>
+            <size>20</size>
+            <text>@0%3A30%20Data%20Structures</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="15" y="76" w="200" h="80" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="312">
+          <controlProperties>
+            <text>Data%20Structures%20Overview%3A%0A-Arrays%0A-Linked%20Lists%0A-Binary%20Trees%0A-Binary%20Search%20Trees%0A-HashMaps</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="313" controlTypeID="__group__" x="1559" y="167" w="144" h="80" measuredW="144" measuredH="80" zOrder="43" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="144" h="43" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="313">
+          <controlProperties>
+            <color>14540253</color>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="37" w="144" h="43" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="313">
+          <controlProperties>
+            <color>13421772</color>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="32" y="9" w="79" h="-1" measuredW="76" measuredH="24" zOrder="2" locked="false" isInGroup="313">
+          <controlProperties>
+            <size>16</size>
+            <text>My%20Videos</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="44" y="43" w="56" h="-1" measuredW="50" measuredH="24" zOrder="3" locked="false" isInGroup="313">
+          <controlProperties>
+            <size>16</size>
+            <text>Logout</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="322" controlTypeID="com.balsamiq.mockups::SubTitle" x="1028" y="184" w="-1" h="-1" measuredW="225" measuredH="21" zOrder="57" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>CS101%3A%20Binary%20Search%20Trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="323" controlTypeID="com.balsamiq.mockups::Webcam" x="1028" y="210" w="294" h="153" measuredW="177" measuredH="146" zOrder="58" locked="false" isInGroup="-1"/>
+    <control controlID="324" controlTypeID="com.balsamiq.mockups::TextArea" x="1102" y="493" w="370" h="51" measuredW="200" measuredH="140" zOrder="59" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Left%20node%20is%20smaller%20or%20equal%20to%20parent%20node%2C%20right%20node%20is%20larger%20than%20parent%20node</text>
+      </controlProperties>
+    </control>
+    <control controlID="325" controlTypeID="com.balsamiq.mockups::Button" x="1392" y="557" w="-1" h="-1" measuredW="80" measuredH="27" zOrder="60" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Post%20Note</text>
+      </controlProperties>
+    </control>
+    <control controlID="326" controlTypeID="com.balsamiq.mockups::TextArea" x="1028" y="406" w="294" h="27" measuredW="200" measuredH="140" zOrder="61" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>@%201%3A30%20Binary%20search%20complexity</text>
+      </controlProperties>
+    </control>
+    <control controlID="327" controlTypeID="com.balsamiq.mockups::TextArea" x="1028" y="366" w="294" h="32" measuredW="200" measuredH="140" zOrder="62" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>@%201%3A00%20Binary%20search%20trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="328" controlTypeID="com.balsamiq.mockups::TextInput" x="1102" y="460" w="370" h="-1" measuredW="81" measuredH="27" zOrder="63" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>BST%20Nodes</text>
+      </controlProperties>
+    </control>
+    <control controlID="329" controlTypeID="com.balsamiq.mockups::SubTitle" x="1051" y="464" w="-1" h="-1" measuredW="36" measuredH="19" zOrder="64" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Title%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="330" controlTypeID="com.balsamiq.mockups::SubTitle" x="1051" y="492" w="-1" h="-1" measuredW="35" measuredH="19" zOrder="65" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Note</text>
+      </controlProperties>
+    </control>
+    <control controlID="331" controlTypeID="__group__" x="1345" y="211" w="234" h="209" measuredW="234" measuredH="209" zOrder="16" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="234" h="209" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="331">
+          <controlProperties>
+            <borderColor>10066329</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>16777215</color>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="8" y="40" w="215" h="-1" measuredW="211" measuredH="23" zOrder="1" locked="false" isInGroup="331">
+          <controlProperties>
+            <size>20</size>
+            <text>@0%3A30%20Data%20Structures</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="15" y="76" w="200" h="80" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="331">
+          <controlProperties>
+            <text>Data%20Structures%20Overview%3A%0A-Arrays%0A-Linked%20Lists%0A-Binary%20Trees%0A-Binary%20Search%20Trees%0A-HashMaps</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="332" controlTypeID="__group__" x="343" y="278" w="274" h="163" measuredW="274" measuredH="163" zOrder="68" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="274" h="163" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="332"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="20" y="15" w="235" h="-1" measuredW="212" measuredH="23" zOrder="1" locked="false" isInGroup="332">
+          <controlProperties>
+            <size>20</size>
+            <text>Save%20Annotation%2C%20Login.</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="43" y="50" w="188" h="-1" measuredW="79" measuredH="26" zOrder="2" locked="false" isInGroup="332">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::TextInput" x="43" y="83" w="188" h="-1" measuredW="79" measuredH="26" zOrder="3" locked="false" isInGroup="332">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Button" x="177" y="120" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="4" locked="false" isInGroup="332">
+          <controlProperties>
+            <text>Login</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="333" controlTypeID="__group__" x="1345" y="827" w="234" h="209" measuredW="234" measuredH="209" zOrder="69" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="234" h="209" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="333">
+          <controlProperties>
+            <borderColor>10066329</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>16777215</color>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::SubTitle" x="8" y="40" w="215" h="-1" measuredW="211" measuredH="23" zOrder="1" locked="false" isInGroup="333">
+          <controlProperties>
+            <size>20</size>
+            <text>@0%3A30%20Data%20Structures</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="15" y="76" w="200" h="80" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="333">
+          <controlProperties>
+            <text>Data%20Structures%20Overview%3A%0A-Arrays%0A-Linked%20Lists%0A-Binary%20Trees%0A-Binary%20Search%20Trees%0A-HashMaps</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="334" controlTypeID="com.balsamiq.mockups::SubTitle" x="1028" y="800" w="-1" h="-1" measuredW="225" measuredH="21" zOrder="70" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>CS101%3A%20Binary%20Search%20Trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="335" controlTypeID="com.balsamiq.mockups::Webcam" x="1028" y="826" w="294" h="153" measuredW="177" measuredH="146" zOrder="71" locked="false" isInGroup="-1"/>
+    <control controlID="336" controlTypeID="com.balsamiq.mockups::TextArea" x="1102" y="1109" w="370" h="51" measuredW="200" measuredH="140" zOrder="72" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Left%20node%20is%20smaller%20or%20equal%20to%20parent%20node%2C%20right%20node%20is%20larger%20than%20parent%20node</text>
+      </controlProperties>
+    </control>
+    <control controlID="337" controlTypeID="com.balsamiq.mockups::Button" x="1392" y="1173" w="-1" h="-1" measuredW="80" measuredH="27" zOrder="73" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Post%20Note</text>
+      </controlProperties>
+    </control>
+    <control controlID="338" controlTypeID="com.balsamiq.mockups::TextArea" x="1028" y="1022" w="294" h="27" measuredW="200" measuredH="140" zOrder="74" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>@%201%3A30%20Binary%20search%20complexity</text>
+      </controlProperties>
+    </control>
+    <control controlID="339" controlTypeID="com.balsamiq.mockups::TextArea" x="1028" y="982" w="294" h="32" measuredW="200" measuredH="140" zOrder="75" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>@%201%3A00%20Binary%20search%20trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="340" controlTypeID="com.balsamiq.mockups::TextInput" x="1102" y="1076" w="370" h="-1" measuredW="81" measuredH="27" zOrder="76" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>BST%20Nodes</text>
+      </controlProperties>
+    </control>
+    <control controlID="341" controlTypeID="com.balsamiq.mockups::SubTitle" x="1051" y="1080" w="-1" h="-1" measuredW="36" measuredH="19" zOrder="77" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Title%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="342" controlTypeID="com.balsamiq.mockups::SubTitle" x="1051" y="1108" w="-1" h="-1" measuredW="35" measuredH="19" zOrder="78" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Note</text>
+      </controlProperties>
+    </control>
+    <control controlID="343" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="1736" y="656" w="800" h="600" measuredW="450" measuredH="400" zOrder="81" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>anNOtaTE%0Ahttp%3A//www.annotate.com/users/1</text>
+      </controlProperties>
+    </control>
+    <control controlID="344" controlTypeID="com.balsamiq.mockups::Canvas" x="1736" y="785" w="100" h="444" measuredW="100" measuredH="70" zOrder="82" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="345" controlTypeID="com.balsamiq.mockups::Canvas" x="1736" y="725" w="800" h="60" measuredW="100" measuredH="70" zOrder="83" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6770343</color>
+      </controlProperties>
+    </control>
+    <control controlID="346" controlTypeID="com.balsamiq.mockups::SubTitle" x="1765" y="742" w="-1" h="-1" measuredW="155" measuredH="35" zOrder="84" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>anNOtaTE</text>
+      </controlProperties>
+    </control>
+    <control controlID="347" controlTypeID="com.balsamiq.mockups::Button" x="2193" y="742" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="85" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="348" controlTypeID="com.balsamiq.mockups::TextInput" x="2016" y="742" w="177" h="-1" measuredW="133" measuredH="27" zOrder="86" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>binary%20Search%20Trees</text>
+      </controlProperties>
+    </control>
+    <control controlID="349" controlTypeID="com.balsamiq.mockups::Canvas" x="2436" y="785" w="100" h="444" measuredW="100" measuredH="70" zOrder="87" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>14540253</borderColor>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="350" controlTypeID="com.balsamiq.mockups::SubTitle" x="1861" y="800" w="-1" h="-1" measuredW="178" measuredH="21" zOrder="88" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>My%20Annotated%20Videos%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="351" controlTypeID="com.balsamiq.mockups::Webcam" x="1884" y="854" w="67" h="63" measuredW="177" measuredH="146" zOrder="89" locked="false" isInGroup="-1"/>
+    <control controlID="352" controlTypeID="com.balsamiq.mockups::SubTitle" x="2436" y="746" w="-1" h="-1" measuredW="84" measuredH="19" zOrder="90" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Perry%20Yee%20%5E</text>
+      </controlProperties>
+    </control>
+    <control controlID="353" controlTypeID="com.balsamiq.mockups::Webcam" x="1884" y="929" w="67" h="63" measuredW="177" measuredH="146" zOrder="91" locked="false" isInGroup="-1"/>
+    <control controlID="354" controlTypeID="com.balsamiq.mockups::Webcam" x="1884" y="1006" w="67" h="63" measuredW="177" measuredH="146" zOrder="92" locked="false" isInGroup="-1"/>
+    <control controlID="357" controlTypeID="com.balsamiq.mockups::Paragraph" x="1986" y="859" w="200" h="52" measuredW="200" measuredH="80" zOrder="93" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="358" controlTypeID="com.balsamiq.mockups::Paragraph" x="1986" y="930" w="200" h="52" measuredW="200" measuredH="80" zOrder="94" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="359" controlTypeID="com.balsamiq.mockups::Paragraph" x="1986" y="1011" w="200" h="52" measuredW="200" measuredH="80" zOrder="95" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CS101%3A%20Binary%20Search%20Trees%0Aby%20professor%0A1%20views</text>
+      </controlProperties>
+    </control>
+    <control controlID="362" controlTypeID="com.balsamiq.mockups::Button" x="2201" y="854" w="-1" h="-1" measuredW="57" measuredH="27" zOrder="96" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Share</text>
+      </controlProperties>
+    </control>
+    <control controlID="363" controlTypeID="com.balsamiq.mockups::Button" x="2201" y="881" w="-1" h="-1" measuredW="61" measuredH="27" zOrder="97" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="364" controlTypeID="com.balsamiq.mockups::Button" x="2201" y="929" w="-1" h="-1" measuredW="57" measuredH="27" zOrder="98" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Share</text>
+      </controlProperties>
+    </control>
+    <control controlID="365" controlTypeID="com.balsamiq.mockups::Button" x="2201" y="956" w="-1" h="-1" measuredW="61" measuredH="27" zOrder="99" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="366" controlTypeID="com.balsamiq.mockups::Button" x="2201" y="1010" w="-1" h="-1" measuredW="57" measuredH="27" zOrder="100" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Share</text>
+      </controlProperties>
+    </control>
+    <control controlID="367" controlTypeID="com.balsamiq.mockups::Button" x="2201" y="1037" w="-1" h="-1" measuredW="61" measuredH="27" zOrder="101" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

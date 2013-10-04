@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2">
@@ -9,7 +9,7 @@
 					<form class="form-inline form_group" action="/videos" method="get">
 						<div class="form-group pull-left">
 							<% if @search %>
-								<input id="searchQuery" class='form-inline form-control' name="search" type="text" value=<%= @search %>>
+								<input id="searchQuery" class='form-inline form-control' name="search" type="text" value='<%= @search %>' />
 							<% else %>
 								<input class='form-inline form-control' name="search" type="text" placeholder="Search Youtube">
 							<% end %>
@@ -23,7 +23,7 @@
 			<div class="col-lg-2 nav-right">
 				<% if signed_in? %>
 					<div class="dropdown pull-right">
-						<a class="glyph2 pull-right" href="javascript:;" data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<a class="menu-icon pull-right" href="javascript:;" data-toggle="dropdown"><i class="icon-cog icon-1x"></i></a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 					    	<li role="presentation"><a role="menuitem" tabindex="-1" href=<%= "/users/#{current_user.id}" %> >My Videos</a></li>
 					    	<li role="presentation" class="divider"></li>

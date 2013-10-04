@@ -4,25 +4,18 @@ class SessionsController < ApplicationController
   end
 
   def create
+  	@user = User.new
 		user = User.authenticate(params[:session][:email], params[:session][:password])
-
-		# if user.nil?
-		# 	flash.now[:error]	= "Invalid email/password combination."
-		# 	# respond_to do |format|
-		# 	# 	format.json{variable data json: "Invalid email/password Combination"}
-		# 	# end
-		# else
-		# 	sign_in user
-		# 	respond_to do |format|
-		# 		format.json{variable data json: "/users/#{user.id}"}
-		# 	end
-		# 	#redirect_to "/users/#{user.id}"
-		# end
 
 		respond_to do |format|
 	      if !user.nil?
 	      	sign_in user
-	        format.html { redirect_to "/users/#{user.id}"}
+	      	if params[:video_id]
+	      		format.json { render json: "/v/#{params[:video_id]}"} 
+	      	else
+	        	#format.html { redirect_to "/users/#{user.id}"}
+	        	format.json { render json: "/users/#{user.id}"} 
+	        end
 	      else
 	        format.html { render action: "new" }
 	        format.json { variable render json: "Invalid email/password Combination", status: :unprocessable_entity }

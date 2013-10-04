@@ -6,6 +6,7 @@ class VideosController < ApplicationController
   	end
 
     @search = params[:search]
+    puts params[:search]
 
   	if params[:nextPage] 
       @data = youtube_get(query, params[:nextPage])
@@ -39,7 +40,8 @@ class VideosController < ApplicationController
   def video
   	@user = User.new
   	@video = Video.find(params[:id])
+    @notes = @video.notes.order("time asc")
 
-  	@note = @video.notes.new
+    @note = @video.notes.new
   end
 end

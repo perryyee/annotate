@@ -4,6 +4,9 @@
 <%= simple_form_for(:session, :url => sessions_path, html:{novalidate: true}) do |f| %>
 	<%= f.input :email, :class => "form-control" %>
 	<%= f.input :password, :class => "form-control" %><br/>
+	<% if @video %>
+		<input type="hidden" name="video_id" value=<%= @video.id %>>
+	<% end %> 
 	<%= f.submit :Login, :class => "btn btn-primary" %>
 <% end %>
 

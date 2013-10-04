@@ -31,17 +31,32 @@ $(function(){
 		$('#myModal2').modal('hide');
 	});
 
-	// $('.simple_form.session').submit(function(){
-	// 	$.post(
-	// 		$(this).attr('action'),
-	// 		$(this).serialize(),
-	// 		function(data) {
-	// 			$('#errors').html("Invalid Email/Password Combination");
-	// 		},
-	// 		"json"
-	// 	);
-	// 	return false;
-	// });
+	$('.simple_form.session').submit(function(){
+		if ( $('#session_email').val() && $('#session_password').val() )
+		{
+			$.post(
+				$(this).attr('action'),
+				$(this).serialize(),
+				function(data) {
+					alert(data);
+					if (data)
+					{
+						window.location.href = data;
+					}
+					else
+					{
+						$('.errors').html("Invalid Email/Password Combination");
+					}
+				},
+				"json"
+			);
+		}
+		else
+		{
+			$('.errors').html("Email or Password cannot be blank.");
+		}
+		return false;
+	});
 
 	// $('.simple_form.new_user').submit(function(){
 	// 	$.post(

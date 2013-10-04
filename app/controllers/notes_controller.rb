@@ -8,13 +8,8 @@ class NotesController < ApplicationController
   def create
   	@video = Video.find(params[:video_id])
   	
-  	# if @video.notes.create(params[:note])
-   #    redirect_to "/videos/#{params['note']['video_url']}"
-   #  else
-   #    render action: "new"
-   #  end
-   @note = @video.notes.create(params[:note])
-   @note.video_id = params[:video_id]
+    @note = @video.notes.create(params[:note])
+    @note.video_id = params[:video_id]
 
     respond_to do |format|
       if @note.save

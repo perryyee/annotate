@@ -5,7 +5,13 @@
 
 /*Navbar Styling */
 body {
+	padding-top: 40px;
 	background-image: url('tile.jpg') !important;
+}
+
+a.menu-icon {
+	width: 12px;
+	margin-right: 5px;
 }
 .container {
 	padding: 0px !important;

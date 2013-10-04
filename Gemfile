@@ -21,11 +21,11 @@ group :assets do
 end
 
 gem 'json'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.2.2'
 gem 'bootstrap-sass-rails'
 gem 'hirb'
 gem 'simple_form'
-gem 'rails-footnotes', :group => :development
+#gem 'rails-footnotes', :group => :development
 gem 'font-awesome-rails'
 gem 'certified'
 

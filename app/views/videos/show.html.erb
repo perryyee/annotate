@@ -1,3 +1,7 @@
+<%
+=begin %>
+If needed to alert upon leaving the page use:
+
 <%= content_for :head do %>
 	<script type="text/javascript">
 		window.onbeforeunload = function() {
@@ -8,8 +12,9 @@
 			<% end %>
 		};
 		</script>
-
 <% end %>
+<%
+=end %>
 
 
 <%= content_for :title do %>
@@ -25,7 +30,7 @@
 	</div>
 	<div class="col-lg-5">
 		<div class="well note">
-			<div id = "note-title"></div>
+			<div id="note-title"></div>
 			<div id="note-content"></div>
 		</div>
 	</div>
@@ -67,8 +72,13 @@
       	<div class="modal-content">
         	<div class="modal-body">
           		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          		<p>Unfavorited will be removed after a week.</p>
-          		<p class="text-center">Share: <%= link_to "annotate/v/#{@video.id}", "/v/#{@video.id}" %></p>
+          		<h3 class='text-center'>Unfavorited videos will be removed after a week.</h3><br/>
+        		<div class="row">
+        			<div class="col-lg-8 col-lg-offset-2 text-center">
+          				<span id="shareLink"><strong>Share: </strong><input id="shareValue" class="form-inline" type="text" value=<%= "annotate/v/#{@video.id}" %>></span>
+          			</div>
+          		</div><br/>	
+          		<p class="text-center"><strong>Go To: </strong><%= link_to "annotate/v/#{@video.id}", "/v/#{@video.id}" %></p>
         	</div>
       	</div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

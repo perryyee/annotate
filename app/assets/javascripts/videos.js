@@ -4,10 +4,13 @@
 
 //  This code loads the IFrame Player API code asynchronously.
 
+
 var notes = [];
 var tag = document.createElement('script');
 var count = 1;
 
+
+//Create note object in order to keep track of notes on a current page by playtime
 function note_data(time, title, content) 
 {
 	this.time = time;
@@ -42,12 +45,13 @@ event.target.playVideo();
 }
 
 // The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
+// The function indicates that when playing a video.
+// Actively checks every second whether a corresponding note at that playtime is present, 
+// if so change the note section into the note object's content
+
 var done = false;
 function onPlayerStateChange(event) {
 	if (event.data == YT.PlayerState.PLAYING && !done) {
-	  //done = true;
 
 	  var timeout = setTimeout(function(){
 	  	var first_time = -1;
@@ -58,7 +62,7 @@ function onPlayerStateChange(event) {
 		var interval = setInterval(function(){
 			time = Math.ceil(player.getCurrentTime());
 		  	if (time != first_time && time!= second_time && time!=third_time) {
-			  	console.log(time);
+			  	//console.log(time);
 
 			  	for (var i=0; i<notes.length; i++) {
 			    	if(Math.ceil(player.getCurrentTime()) === notes[i]['time']) {
@@ -91,17 +95,41 @@ function stopVideo() {
 
 
 $(document).ready(function(){
+
+	var notes_json = $('#noteArray').data('url');
+	for (var i=0; i<notes_json.length; i++)
+	{
+		new_note = new note_data(Math.floor(notes_json[i]['time']), notes_json[i]['title'], notes_json[i]['content']);
+		notes.push(new_note);
+	}
+
+	//Sets URL of the video to the click of the row, and redirects the page to the correct URL
 	$('.results').on('click', function(){
 		url = $(':first-child', this).val()
 		window.location.href = "/videos/"+url;
 	});
 
-
+	//Keeps track of the time the note was made; begins when the user types into the title box
 	$('#note_title').on('focus', function(){
 		time = player.getCurrentTime();
 		$('#note_time').val(time);
 	});
 
+	//clickable table rows for preloaded data to seek to sections when document is ready
+	$('tr').on('click', function(){
+		time = $(':first-child', this).val();
+		title = $(':nth-child(2)', this).val();
+		content = unescape($(':nth-child(3)', this).val());
+		content = content.replace(/\r?\n/g, '<br />')
+
+		player.seekTo(time);
+		$('#note-title').html("<h3>"+title+"</h3>");
+		$('#note-content').html("<p>"+content+"</p>");
+	});
+
+	//AJAX function on note submission; note is created, added to the database, and a note object is
+	//created and added to a notes array, which is checked, also adds notes title and time to a table
+	//and allows the user to click on the title and time in order to skip to parts of the video.
 	$('#new_note').submit(function(){
 		if ($('#note_title').val()) 
 		{
@@ -112,13 +140,21 @@ $(document).ready(function(){
 					time = $('#note_time').val();
 					minutes = Math.floor(time/60);
 					seconds = Math.floor(time-minutes*60);
-					if (seconds == 0 || seconds ==-1)
+					if (seconds == 0)
 					{
 						seconds = "00";
 					}
 					else if (seconds < 10)
 					{
 						seconds = "0"+seconds;
+					}
+					else if (minutes == 0)
+					{
+						minutes = "00";
+					}
+					else if (minutes < 10)
+					{
+						minutes = "0"+minutes;
 					}
 					time_format = minutes+":"+seconds;
 					title = $('#note_title').val();
@@ -152,10 +188,19 @@ $(document).ready(function(){
 		}
 		return false;
 	});
+	
+	//Helps user copy share link by selecting the input field value upon click of the span
+	$('#shareLink').on('click', function(){
+		$('#shareValue').select();
+	});
 
+	//Passes next token value to the videos controller
 	$('#nextToken').submit(function(){
 		$('#nextSearch').val($('#searchQuery').val());
-		// $.post(
+
+		// If AJAX is to be implemented:
+
+		// $.get(
 		// 	$(this).attr('action'),
 		// 	$(this).serialize(),
 		// 	function(data) {
@@ -166,6 +211,7 @@ $(document).ready(function(){
 		// return false;
 	});
 
+	//Passes previous token value to the videos controller
 	$('#prevToken').submit(function(){
 		$('#prevSearch').val($('#searchQuery').val());
 		// $.get(

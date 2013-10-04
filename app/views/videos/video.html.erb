@@ -1,24 +1,16 @@
-<%
-=begin %>
-<%= content_for :head do %>
-	<script type="text/javascript">
-		window.onbeforeunload = function() {
-			<% if !signed_in? %>
-				return "Please login in order to save your video and notes.";
-			<% else %>
-				return "Please save your video or all data will be lost.";
-			<% end %>
-		};
-		</script>
-
-<% end %>
-<%
-=end %>
-
 <%= content_for :title do %>
 	Video
 <% end %>
 
+
+<%= javascript_tag do %>
+	window.obj = <%=raw @notes.to_json %>;
+<% end %>
+
+<%= content_tag "div", id: "noteArray", data: {url: @notes} do %>
+<% end %>
+
+<%= link_to "Share Link", "#link_modal", "data-toggle" => "modal", :class => "share pull-right" %>
 <h1 class="show_title"><%= @video.name %>:</h1>
 
 <div class="row">
@@ -49,7 +41,7 @@
 	<div class="col-lg-5">
 		<h2>Notes</h2>
 		<div class="result_table">
-			<table class="table">
+			<table id="notes_table" class="table">
 				<thead>
 					<tr>
 						<th>Time</th>
@@ -57,6 +49,19 @@
 					</tr>
 				</thead>
 				<tbody>
+					<% @notes.each do |note| %>
+						<tr>
+							<input id="skip_to" type="hidden" value=<%= note.time %>>
+							<input id="new_title" type="hidden" value=<%= note.title %>>
+							<input id="new_content" type="hidden" value=<%= note.content %>>
+							<% if note.time %>
+								<td><%= Time.at(note.time).utc.strftime("%M:%S") %></td>
+							<% else %>
+								<td><%= note.time %></td>
+							<% end %>
+							<td><%= note.title %></td>
+						</tr>
+					<% end %>
 				</tbody>
 			</table>
 		</div>
@@ -69,8 +74,13 @@
       	<div class="modal-content">
         	<div class="modal-body">
           		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          		<p>Unfavorited will be removed after a week.</p>
-          		<p class="text-center">Share: <%= link_to "annotate/v/#{@video.id}", "/v/#{@video.id}" %></p>
+          		<h3 class='text-center'>Unfavorited videos will be removed after a week.</h3>
+        		<div class="row">
+        			<div class="col-lg-8 col-lg-offset-2">
+          				<span id="shareLink" class="text-center">Share: <input id="shareValue" class="form-inline" type="text" value=<%= "annotate/v/#{@video.id}" %>></span>
+          			</div>
+          		</div>	
+          		<p class="text-center">Go To: <%= link_to "annotate/v/#{@video.id}", "/v/#{@video.id}" %></p>
         	</div>
       	</div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
