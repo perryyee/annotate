@@ -97,15 +97,18 @@ function stopVideo() {
 $(document).ready(function(){
 
 	var notes_json = $('#noteArray').data('url');
-	for (var i=0; i<notes_json.length; i++)
+	if (notes_json) 
 	{
-		new_note = new note_data(Math.floor(notes_json[i]['time']), notes_json[i]['title'], notes_json[i]['content']);
-		notes.push(new_note);
+		for (var i=0; i<notes_json.length; i++)
+		{
+			new_note = new note_data(Math.floor(notes_json[i]['time']), notes_json[i]['title'], notes_json[i]['content']);
+			notes.push(new_note);
+		}
 	}
 
 	//Sets URL of the video to the click of the row, and redirects the page to the correct URL
 	$('.results').on('click', function(){
-		url = $(':first-child', this).val()
+		url = $(':first-child', this).val();
 		window.location.href = "/videos/"+url;
 	});
 

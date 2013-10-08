@@ -2,11 +2,6 @@
 	Video
 <% end %>
 
-
-<%= javascript_tag do %>
-	window.obj = <%=raw @notes.to_json %>;
-<% end %>
-
 <%= content_tag "div", id: "noteArray", data: {url: @notes} do %>
 <% end %>
 

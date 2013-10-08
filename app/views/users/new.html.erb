@@ -1,6 +1,7 @@
 <h2 class="modal-title text-center">Register</h2>
-<div class="errors"></div>
-<%= simple_form_for(@user, html:{novalidate: true}) do |f| %>
+<div class="register_errors"></div>
+
+<%= simple_form_for(@user) do |f| %>
 	<% if @video %>
 		<input type="hidden" name="video_id" value=<%= @video.id %>>
 	<% end %> 

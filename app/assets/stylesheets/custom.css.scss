@@ -86,6 +86,7 @@ a.menu-icon {
 }
 
 .login-modal {
+	overflow-y: scroll;
 	.modal-content {
 		width: 380px;
 		padding-bottom: 20px !important;
@@ -96,8 +97,17 @@ a.menu-icon {
     }
 }
 
-.modal {
-	overflow-y: auto !important;
+.register-modal {
+	overflow-y: hidden;
+
+	.modal-content {
+		width: 380px;
+		padding-bottom: 20px !important;
+    }
+
+    form {
+    	margin: 0px auto;
+    }
 }
 
 .modal-content {

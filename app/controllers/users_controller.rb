@@ -8,17 +8,47 @@ class UsersController < ApplicationController
 
   def create
   	@user = User.new(params[:user])
-  	if @user.save
-      sign_in @user
-      if params[:video_id]
-        redirect_to "/v/#{params[:video_id]}"
+
+  	# if @user.save
+   #    sign_in @user
+   #    if params[:video_id]
+   #      redirect_to "/v/#{params[:video_id]}"
+   #    else
+  	# 	  redirect_to "/users/#{current_user.id}"
+   #    end
+  	# else
+  	# 	render action: 'new'
+  	# end
+
+    respond_to do |format|
+      if @user.save
+        sign_in @user
+        if params[:video_id]
+          format.json { render json: { url: "/v/#{params[:video_id]}"} }
+        else
+          #format.html { redirect_to "/users/#{user.id}"}
+          format.json { render json: { url: "/users/#{current_user.id}"} }
+        end
       else
-  		  redirect_to "/users/#{current_user.id}"
+
+        @errors = ""
+
+        @user.errors.each do |key, values|  
+          value_content = values
+          if values.kind_of?(Array)
+            value_content += "#{values[0]}"
+          end
+          key = key.to_s.split("_").map(&:capitalize).join(" ")
+          @errors += "#{key} #{value_content}<br/>"
+        end
+
+        format.html { render action: "new" }
+        format.json { render json: { error: @errors } }
       end
-  	else
-  		render action: 'new'
-  	end
+    end
+
   end
+
 
   def show
   	@user = User.new
