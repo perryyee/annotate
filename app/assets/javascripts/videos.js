@@ -192,6 +192,27 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	//Handles AJAX function for adding videos to a favorites list
+	$('.edit_video').submit(function(){
+		var form = $(this);
+		$.post(
+			form.attr('action'),
+			form.serialize(),
+			function(data) {
+				if (data.result == "Success")
+				{
+					$(".favorite_content").html("<p class= 'pull-right favorites'>Video Added.</p>");
+				}
+				else
+				{
+					$(".favorite_content").html("<p class= 'pull-right favorites'>Failed to Add Video.</p>");
+				}
+			},
+			"json"
+		);
+		return false;
+	});
+
 	//Helps user copy share link by selecting the input field value upon click of the span
 	$('#shareLink').on('click', function(){
 		$('#shareValue').select();

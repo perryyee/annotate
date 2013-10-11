@@ -5,6 +5,15 @@
 <%= content_tag "div", id: "noteArray", data: {url: @notes} do %>
 <% end %>
 
+<% if signed_in? %>
+	<div class="favorite_content">
+		<%= simple_form_for @video, :url => favorite_path, :method => :post do |f| %>
+			<input type="hidden" name="video_id" value=<%= @video.id %>>
+			<%= f.submit  "Add to Favorites", :class => "favorites btn-link pull-right" %>
+		<% end %>
+	</div>
+<% end %>
+
 <%= link_to "Share Link", "#link_modal", "data-toggle" => "modal", :class => "share pull-right" %>
 <h1 class="show_title"><%= @video.name %>:</h1>
 

@@ -9,17 +9,6 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
 
-  	# if @user.save
-   #    sign_in @user
-   #    if params[:video_id]
-   #      redirect_to "/v/#{params[:video_id]}"
-   #    else
-  	# 	  redirect_to "/users/#{current_user.id}"
-   #    end
-  	# else
-  	# 	render action: 'new'
-  	# end
-
     respond_to do |format|
       if @user.save
         sign_in @user
@@ -51,6 +40,7 @@ class UsersController < ApplicationController
 
 
   def show
-  	@user = User.new
+  	@user = User.find(current_user.id)
+    @videos = @user.videos
   end
 end

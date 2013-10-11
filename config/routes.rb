@@ -1,5 +1,7 @@
 Annotate::Application.routes.draw do
 
+  post 'v/:id/favorite' => 'videos#favorite', as: 'favorite'
+
   resources :users
   resources :videos
   resources :notes

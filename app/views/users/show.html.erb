@@ -6,10 +6,22 @@
 			<tr>
 				<th>#</th>
 				<th>Video Title</th>
+				<th>Video URL</th>
 				<th>Notes</th>
 			</tr>
 		</thead>
 		<tbody>
+			<% count = 1 %>
+			<% @videos.each do |video| %>
+				<tr>
+					<td><%= count %></td>
+					<td><%= video.name %></td>
+					<td><%= "www.youtube.com/watch?v=#{video.url}" %></td>
+					<td><%= video.notes.length %></td>
+					<input type="hidden" name="id" value=<%= video.id %>>
+				</tr>
+				<% count += 1 %>
+			<% end %>
 		</tbody>
 	</table>
 </div>

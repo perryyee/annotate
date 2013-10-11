@@ -44,4 +44,28 @@ class VideosController < ApplicationController
 
     @note = @video.notes.new
   end
+
+  def favorite
+
+    @video = Video.find(params[:id])
+    @notes = @video.notes
+
+    @new_video = Video.new
+    
+    @new_video.url = @video.url
+    @new_video.name = @video.name
+    @new_video.user_id = current_user.id
+    
+    respond_to do |format|
+      if @new_video.save
+        @notes.each do |note|
+          @new_note = @new_video.notes.create(title: note.title, time: note.time, content: note.content)
+        end
+        format.json { render json: { result: "Success" } }
+      else
+        format.json { render json: { result: "Failed" } }
+      end
+    end
+
+  end
 end
