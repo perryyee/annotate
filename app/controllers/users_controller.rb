@@ -2,10 +2,12 @@ class UsersController < ApplicationController
   def index
   end
 
+  #creates a new user for the user registration form
   def new
     @user = User.new
   end
 
+  #User Registration
   def create
   	@user = User.new(params[:user])
 
@@ -22,6 +24,7 @@ class UsersController < ApplicationController
 
         @errors = ""
 
+        #Logic to aggregate and format errors into json data
         @user.errors.each do |key, values|  
           value_content = values
           if values.kind_of?(Array)
@@ -38,7 +41,7 @@ class UsersController < ApplicationController
 
   end
 
-
+#Users saved video page
   def show
   	@user = User.find(current_user.id)
     @videos = @user.videos

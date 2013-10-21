@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   	@user = User.new
   end
 
+  #Handles the creation of a session upon user login
   def create
   	@user = User.new
 		user = User.authenticate(params[:session][:email], params[:session][:password])
@@ -22,6 +23,7 @@ class SessionsController < ApplicationController
     end
 	end
 
+	#Handles the user logout by destrogin the session
 	def destroy
 		sign_out
 		redirect_to "/"

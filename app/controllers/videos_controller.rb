@@ -1,4 +1,6 @@
 class VideosController < ApplicationController
+  
+  #Handles Youtube Video search function, formats query properly, and handles pageTokens
   def index
   	@user = User.new
   	if params[:search]
@@ -18,10 +20,7 @@ class VideosController < ApplicationController
 
   end
 
-  def new
-  	@user = User.new
-  end
-
+  #Creates a new video, and displays video information
   def show
   	@user = User.new
   	@video_url = params[:id]
@@ -37,6 +36,7 @@ class VideosController < ApplicationController
   	@note = @video.notes.new
   end
 
+  #Video display for saved video
   def video
   	@user = User.new
   	@video = Video.find(params[:id])
@@ -45,8 +45,8 @@ class VideosController < ApplicationController
     @note = @video.notes.new
   end
 
+  #Handles user adding video to favorites, creates a new video with notes for and adds ownership to user
   def favorite
-
     @video = Video.find(params[:id])
     @notes = @video.notes
 

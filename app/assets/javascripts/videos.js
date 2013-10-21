@@ -96,6 +96,7 @@ function stopVideo() {
 
 $(document).ready(function(){
 
+	//Retrieves notes data from HTML5 data tag and adds to JS notes array
 	var notes_json = $('#noteArray').data('url');
 	if (notes_json) 
 	{

@@ -5,6 +5,7 @@ class NotesController < ApplicationController
   def new
   end
 
+  # Handles the note creation, and returns json errors or success messsage
   def create
   	@video = Video.find(params[:video_id])
   	
