@@ -86,7 +86,6 @@ a.menu-icon {
 }
 
 .login-modal {
-	overflow-y: scroll;
 	.modal-content {
 		width: 380px;
 		padding-bottom: 20px !important;
@@ -98,7 +97,6 @@ a.menu-icon {
 }
 
 .register-modal {
-	overflow-y: hidden;
 
 	.modal-content {
 		width: 380px;
@@ -112,4 +110,8 @@ a.menu-icon {
 
 .modal-content {
 	margin: 0px auto !important;
+}
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+     margin-right:0px;
 }

@@ -76,11 +76,18 @@ $(function(){
 		return false;
 	});
 
-	//Clears AJAx login/registration errors upon closing of modal
+	//Clears AJAX login/registration errors upon closing of modal
 	$('#myModal').on('hidden.bs.modal', function () {
  		$('.errors').html("");
 	});
 	$('#myModal2').on('hidden.bs.modal', function () {
  		$('.register_errors').html("");
+	});
+
+	//Pauses video 
+	$('#loginModal').on('click', function() {
+		if (player) {
+			player.pauseVideo();
+		}
 	});
 });

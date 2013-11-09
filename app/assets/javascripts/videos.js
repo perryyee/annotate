@@ -31,7 +31,9 @@ function onYouTubeIframeAPIReady() {
 	  height: '390',
 	  width: '640',
 	  videoId: id,
-	  playerVars: { 'autoplay': 1},
+	  playerVars: { 	'autoplay': 1,
+	  					wmode: "opaque"
+	  },
 	  events: {
 	    'onReady': onPlayerReady,
 	    'onStateChange': onPlayerStateChange
@@ -217,6 +219,13 @@ $(document).ready(function(){
 	//Helps user copy share link by selecting the input field value upon click of the span
 	$('#shareLink').on('click', function(){
 		$('#shareValue').select();
+	});
+
+	//Pauses the video when the share link is clicked
+	$('.share').on('click', function() {
+		if (player) {
+			player.pauseVideo();
+		}
 	});
 
 	//Passes next token value to the videos controller
